@@ -9,6 +9,9 @@ import { OGMap } from "./maps/OGMap";
 import { NewMap } from "./maps/NewMap";
 
 const RootStack = createNativeStackNavigator({
+  screenOptions: {
+    animation: "fade",
+  },
   screens: {
     OGMap: OGMap,
     MiddleWareToAnotherMap: MiddlewareToAnotherMap,
